@@ -1,0 +1,54 @@
+/*
+  Import fonts.
+
+  In the base theme, we have no fonts importing so that the theme is as fast
+  as possible, and so we are not loading fonts that are then going to be
+  overridden in a sub-theme in any case.
+
+  Want a font? Load it here, or in the html.html.twig file (you'll have to
+  copy that file to the theme) which might give you an even faster loading time.
+
+  For example:
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*/
+
+/*
+  Override variables for your sub-theme. The full list of variables can be
+  found in the localgov_base theme variables.css file.
+
+  In the base theme, most item values are set as variables. These variables
+  usually reference other variables. For example, we have a certain number of
+  colours, font sizes, spacing units, etc. We then create specific variables
+  (for example a variable for the color of a link in the header) but these
+  specific variables reference our base "root" variables.
+
+  The overrides here give an example of what you might want to change. As you
+  can see, you can change as much or as little as you wish.
+
+  Examples:
+  - The base font size in the base theme is 16px (1rem). If you want
+    all your fonts to be based on a different scale, set --font-size variable
+    to something else.
+  - The base line-height is 1.5 in the base theme. If you want that to be 1.3,
+    set --line-height to 1.3. A lot of spacing between items is based on this
+    rhythm (1.5rem), so changing to 1.3 will update all across the board.
+  - The accent colour in our base theme is purple. If you would like it to be
+    hotpink, just set --color-accent: hotpink;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+:root {
+  --breadcrumbs-divider: '>';
+  --color-accent: #005e7a;
+  --color-focus: #fdd24f;
+  --color-info: #006818;
+  --color-info-dark: #08350c;
+  --color-light: #dff0f5;
+  --color-link: var(--color-accent);
+  --color-section-footer-bg: #003747;
+  --color-section-post-footer: #003747;
+  --color-section-post-footer-bg: #f3f2f1;
+  --font-primary: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --font-secondary: "Open Sans",Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --width-container: 71.25rem; /* 1140px */
+}

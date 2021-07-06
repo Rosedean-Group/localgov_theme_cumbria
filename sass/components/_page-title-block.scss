@@ -1,0 +1,19 @@
+.lgd-region--content-top {
+  background-color: var(--color-light);
+  margin-bottom: var(--spacing-mega);
+}
+
+.lgd-page-title-block {
+  border-bottom: none;
+}
+.lgd-page-title-block__title {
+  margin-bottom: 0;
+}
+.lgd-page-title-block__title,
+.lgd-page-title-block__subheader {
+  max-width: 62rem;
+}
+
+.lgd-page-title-block__subheader {
+  font-size: 1.375rem;
+}

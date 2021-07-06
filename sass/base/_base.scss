@@ -1,0 +1,13 @@
+a,
+a:focus {
+  transition: none;
+}
+
+.lgd-region--content a {
+  &:visited {
+    color: #542c6c;
+  }
+  &:hover {
+    color: #01244d;
+  }
+}

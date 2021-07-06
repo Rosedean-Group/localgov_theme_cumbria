@@ -1,0 +1,24 @@
+.localgov-alert-banner {
+  &__wrapper {
+    max-width: var(--width-container);
+  }
+  &__inner {
+    padding: 1.5625rem 0;
+  }
+  &__title {
+    font-size: 1.1875rem;
+    font-weight: 700;
+  }
+  &__body p,
+  &--content-link {
+    font-size: 1.0625rem;
+  }
+  &__actions {
+    align-items: center;
+  }
+  &__close {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

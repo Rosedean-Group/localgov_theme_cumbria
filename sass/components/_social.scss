@@ -1,0 +1,27 @@
+.cumbria-social {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+
+  li:not(first-child) {
+    margin-right: 0.5625rem;
+
+    a {
+      &:focus,
+      &:hover {
+        filter: brightness(110%);
+
+        img {
+          border: 0.1875rem solid var(--color-focus);
+        }
+      }
+      img {
+        border-radius: 50%;
+        border: 0.1875rem solid transparent;
+        height: 2.5625rem;
+        width: 2.5625rem;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+{#
+/**
+ * This is ugly - close the lgd-row__full div from page.html.twig footer, then insert our columns
+ * There must be a better way
+ */
+#}
+</div>
+<div class="lgd-container">
+  <div class="lgd-row">
+    <div class="lgd-row__one-third">
+      <h2>Contact us</h2>
+      <nav aria-label="Contact">
+        <ul>
+          <li class="cumbria-footer__contact"><a href="#">Send us a message</a></li>
+          <li class="cumbria-footer__other"><a href="#">Other ways to contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="lgd-row__one-third">
+      <h2>Your community</h2>
+
+      <p>Get updates from Cumbria County Council and find out how to get involved in community activities.</p>
+
+      <ul class="cumbria-social" role="list">
+        <li><a href="https://www.facebook.com/cumbriacc"><img src="{{ base_path ~ directory }}/images/facebook.svg" alt="Facebook" /></a></li>
+        <li><a href="https://twitter.com/CumbriaCC"><img src="{{ base_path ~ directory }}/images/twitter.svg" alt="Twitter" /></a></li>
+        <li><a href="https://www.youtube.com/channel/UCkRQJw3PnP5pf-ZERLlSUNw/videos"><img src="{{ base_path ~ directory }}/images/youtube.svg" alt="YouTube" /></a></li>
+        <li><a href="https://www.linkedin.com/company/cumbria-county-council/"><img src="{{ base_path ~ directory }}/images/linkedin.svg" alt="LinkedIn" /></a></li>
+        <li><a href="https://www.instagram.com/cumbriacc/"><img src="{{ base_path ~ directory }}/images/instagram.svg" alt="Instagram" /></a></li>
+      </ul>
+    </div>
+
+    <div class="lgd-row__one-third">
+      <h2>Accessibility</h2>
+      <p>Read about how we aim to make our service accessible for all residents in our <a href="/accessibility">accessibility statement</a>.</p>
+    </div>
+  </div>
+</div>
+
+{#
+/**
+ * Ugly part two - open a phantom div to match the closure in page.html.twig
+ */
+#}
+<div>

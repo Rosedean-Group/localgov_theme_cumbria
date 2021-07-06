@@ -1,0 +1,26 @@
+.slp__services .field__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > * {
+    width: calc(33% - var(--spacing-mega));
+  }
+}
+
+.slp__service-icon {
+  display: none;
+}
+
+.slp__service-item {
+  font-size: 1.125rem;
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+
+    a {
+      display: block;
+    }
+  }
+}

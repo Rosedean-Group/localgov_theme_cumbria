@@ -1,0 +1,38 @@
+.sctab__list {
+  border-bottom: none;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+
+  &-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 1.125rem;
+    margin-left: 0;
+    font-weight: 700;
+  }
+}
+
+a.sctab__link {
+  border-bottom: 0.25rem solid var(--color-info-dark);
+  height: 100%;
+  padding: 0.625rem 1rem;
+
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    text-decoration: none;
+
+    .sctab__link-icon {
+      left: initial;
+
+      svg path {
+        fill: var(--color-black);
+      }
+    }
+
+  }
+}
+
+.sctab__link-icon {
+  transition: none;
+}
