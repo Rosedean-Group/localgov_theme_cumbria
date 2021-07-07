@@ -21,4 +21,25 @@
       cursor: pointer;
     }
   }
+
+  &__close {
+    align-items: center;
+    border: none;
+    display: flex;
+    font-family: var(--font-primary);
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover {
+      background-color: transparent;
+      border: none;
+      text-decoration-thickness: 0.1875rem;
+    }
+
+    svg {
+      height: 1.5rem;
+      margin-left: 0.5rem;
+    }
+  }
 }
