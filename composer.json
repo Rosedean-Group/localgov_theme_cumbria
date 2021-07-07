@@ -1,0 +1,10 @@
+{
+    "name": "rosedeangroup/localgov_theme_cumbria",
+    "description": "Sub-theme for the Cumbria County Council website, based on LocalGov Drupal.",
+    "type": "drupal-custom-theme",
+    "homepage": "https://github.com/Rosedean-Group/localgov_theme_cumbria",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "localgovdrupal/localgov_base": "1.x"
+    }
+}
