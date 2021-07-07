@@ -11,12 +11,15 @@
 .lgd-header__toggle {
   border: none;
   border-radius: 0.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   padding: 0.6125rem var(--spacing-small);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-focus);
     color: var(--color-black);
+    text-decoration: none;
 
     svg {
       fill: var(--color-black);
@@ -27,7 +30,9 @@
     transition: var(--transition-time);
 
     svg {
-      height: 1rem;
+      height: 1.125rem;
+      margin-top: 0.125rem;
+      width: 1.125rem;
     }
 
     &::after {

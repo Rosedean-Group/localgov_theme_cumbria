@@ -1,0 +1,30 @@
+.menu--main {
+  > .menu-item {
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    a {
+      border: none;
+      padding: 0.25rem 0.75rem;
+      text-decoration: none;
+
+      &:focus {
+        background-color: var(--color-focus);
+        border-radius: 0.25rem;
+        box-shadow: none;
+        color: var(--color-black);
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: var(--color-white);
+        text-decoration: underline;
+        text-decoration-thickness: 0.1625rem;
+      }
+    }
+  }
+
+  + .menu-item {
+    margin-left: 2.5rem;
+  }
+}
