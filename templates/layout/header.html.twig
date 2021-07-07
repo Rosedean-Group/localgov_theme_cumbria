@@ -1,0 +1,75 @@
+{# Attach libraries #}
+{% if not localgov_base_remove_js %}
+  {{ attach_library('localgov_base/header-js') }}
+{% endif %}
+
+<header class="lgd-header">
+	<div class="lgd-container">
+		<div class="lgd-row">
+			<div class="lgd-row__full">
+				<div class="lgd-header__inner">
+
+					{{ page.header }}
+
+          {% if has_primary_menu or has_search or has_secondary_menu %}
+						{#
+							The "Header Toggles" section sets a number of buttons to activate
+							- the primary menu/search regions on small screens, and
+							- the secondary region on all screen sizes (region where we expect
+								the services menu will be positioned).
+						#}
+						<div class="lgd-header__toggles">
+							{% if has_secondary_menu %}
+								<button
+									class="lgd-header__toggle lgd-header__toggle--secondary"
+									data-target="lgd-header__nav--secondary"
+									aria-controls="lgd-header__nav--secondary"
+									aria-expanded="false"
+									aria-label="{{ 'Toggle services menu'|t }}"
+								>
+                  <span class="lgd-header__toggle-icon lgd-header__toggle-icon--secondary">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='#fff'><path d='M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z'/></svg>
+                  </span>
+									<span class="lgd-header__toggle-text lgd-header__toggle-text--secondary">{{ 'Services'|t }}</span>
+								</button>
+							{% endif %}
+
+							{% if has_primary_menu or has_search %}
+								<button
+									class="lgd-header__toggle lgd-header__toggle--primary"
+									data-target="lgd-header__nav--primary"
+									aria-controls="lgd-header__nav--primary"
+									aria-expanded="false"
+									aria-label="{{ 'Toggle Primary Navigation'|t }}"
+								>
+									<span class="lgd-header__toggle-text lgd-header__toggle-text--primary">{{ 'Menu'|t }}</span>
+									<span class="lgd-header__toggle-icon lgd-header__toggle-icon--primary"></span>
+								</button>
+							{% endif %}
+						</div>
+
+						{% if has_primary_menu or has_search %}
+							<div id="lgd-header__nav--primary" class="lgd-header__nav lgd-header__nav--primary">
+								{% if has_primary_menu %}
+									{{ page.primary_menu }}
+								{% endif %}
+
+								{% if has_search %}
+									{{ page.search }}
+								{% endif %}
+							</div>
+						{% endif %}
+
+          {% endif %}
+
+					{% if has_secondary_menu %}
+						<div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
+							{{ page.secondary_menu }}
+						</div>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

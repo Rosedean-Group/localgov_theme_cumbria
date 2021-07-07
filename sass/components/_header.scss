@@ -7,3 +7,50 @@
   height: auto;
   width: 8.5rem;
 }
+
+.lgd-header__toggle {
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding: 0.6125rem var(--spacing-small);
+
+  &:hover {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+
+    svg {
+      fill: var(--color-black);
+    }
+  }
+
+  &-icon {
+    transition: var(--transition-time);
+
+    svg {
+      height: 1rem;
+    }
+
+    &::after {
+      content: none;
+      transform: none;
+      width: 1rem;
+    }
+  }
+
+  &-text {
+    margin-left: 0.5rem;
+  }
+
+  &--active {
+    background-color: var(--color-focus);
+    color: var(--color-black);
+
+    .lgd-header__toggle-icon {
+      transform: rotate(180deg);
+
+      svg {
+        fill: var(--color-black);
+      }
+    }
+  }
+}
