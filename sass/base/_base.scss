@@ -3,11 +3,15 @@ a:focus {
   transition: none;
 }
 
-.lgd-region--content a {
-  &:visited {
-    color: #542c6c;
-  }
-  &:hover {
-    color: #01244d;
+.lgd-region--content {
+  padding-bottom: var(--spacing-largest);
+  
+  a {
+    &:visited {
+      color: #542c6c;
+    }
+    &:hover {
+      color: #01244d;
+    }
   }
 }
