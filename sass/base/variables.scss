@@ -44,6 +44,7 @@
   --breadcrumbs-divider: '>';
   --breadcrumbs-font-size: var(--font-size-medium);
   --breadcrumbs-padding-vertical: 2.125rem;
+  --breadcrumbs-spacing-bottom: 0;
   --color-accent: #005e7a;
   --color-focus: #fdd24f;
   --color-info: #006818;
@@ -62,7 +63,6 @@
   --page-title-width: 62rem;
   --secondary-menu-bg-color: var(--color-light);
   --section-spacing-horizontal-secondary-menu: 0;
-  --section-spacing-vertical-breadcrumbs: 0;
   --section-spacing-vertical-header: 0.625rem;
   --width-container: 71.25rem; /* 1140px */
 }

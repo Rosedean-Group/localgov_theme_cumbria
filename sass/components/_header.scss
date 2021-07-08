@@ -12,7 +12,8 @@
   border-radius: 0.25rem;
   font-size: 1.125rem;
   font-weight: 700;
-  padding: 0.6125rem var(--spacing-small);
+  line-height: var(--line-height);
+  padding: 0.375rem var(--spacing-small);
 
   &:hover,
   &:focus {
@@ -29,8 +30,8 @@
     transition: var(--transition-time);
 
     svg {
+      display: block;
       height: 1.125rem;
-      margin-top: 0.125rem;
       width: 1.125rem;
     }
 
