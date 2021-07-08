@@ -4,20 +4,10 @@
   padding-bottom: var(--spacing);
 }
 
-.lgd-page-title-block {
-  border-bottom: none;
-}
-
 .lgd-page-title-block__title {
   margin-bottom: 1rem;
 }
 
-.lgd-page-title-block__title,
 .lgd-page-title-block__subheader {
-  max-width: 62rem;
-}
-
-.lgd-page-title-block__subheader {
-  font-size: 1.375rem;
   margin-bottom: 2rem;
 }

@@ -62,14 +62,17 @@
 
           {% endif %}
 
-					{% if has_secondary_menu %}
-						<div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
-							{{ page.secondary_menu }}
-						</div>
-					{% endif %}
-
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
+{% if has_secondary_menu %}
+<div class="secondary-menu-container">
+  <div class="lgd-container padding-horizontal">
+    <div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
+      {{ page.secondary_menu }}
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,4 +1,4 @@
-.sctab__list {
+.service-cta-block__list {
   border-bottom: none;
   justify-content: space-between;
 
@@ -11,8 +11,9 @@
   }
 }
 
-a.sctab__link {
-  border-bottom: 0.25rem solid var(--color-info-dark);
+a.service-cta-block__link {
+  border-bottom: var(--border-large);
+  border-bottom-color: var(--color-info-dark);
   height: 100%;
   padding: 0.625rem 1rem;
 
@@ -21,7 +22,7 @@ a.sctab__link {
     box-shadow: none;
     text-decoration: none;
 
-    .sctab__link-icon {
+    .service-cta-block__link-icon {
       left: initial;
 
       svg path {
@@ -32,6 +33,6 @@ a.sctab__link {
   }
 }
 
-.sctab__link-icon {
+.service-cta-block__link-icon {
   transition: none;
 }

@@ -38,7 +38,12 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 :root {
+  --border-width-large: 0.25rem;
+  --breadcrumbs-background-color: var(--color-light);
+  --breadcrumbs-border: none;
   --breadcrumbs-divider: '>';
+  --breadcrumbs-font-size: var(--font-size-medium);
+  --breadcrumbs-padding-vertical: 2.125rem;
   --color-accent: #005e7a;
   --color-focus: #fdd24f;
   --color-info: #006818;
@@ -50,6 +55,14 @@
   --color-section-post-footer-bg: #f3f2f1;
   --font-primary: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   --font-secondary: "Open Sans",Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --font-size-medium: 0.875rem;
+  --header-logo-width: 8.5rem;
+  --page-title-border: none;
+  --page-title-lede-font-size: 1.375rem;
+  --page-title-width: 62rem;
+  --secondary-menu-bg-color: var(--color-light);
+  --section-spacing-horizontal-secondary-menu: 0;
+  --section-spacing-vertical-breadcrumbs: 0;
   --section-spacing-vertical-header: 0.625rem;
   --width-container: 71.25rem; /* 1140px */
 }

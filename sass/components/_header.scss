@@ -1,11 +1,10 @@
 .lgd-header {
   padding-top: var(--section-spacing-vertical-header);
-  padding-bottom: var(--section-spacing-vertical-header);
-}
+  padding-bottom: 0;
 
-.branding__logo img {
-  height: auto;
-  width: 8.5rem;
+  .lgd-container {
+    padding-bottom: var(--section-spacing-vertical-header);
+  }
 }
 
 .lgd-header__toggle {

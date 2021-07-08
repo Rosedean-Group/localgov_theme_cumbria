@@ -1,0 +1,21 @@
+.secondary-menu-container {
+  background-color: var(--color-light);
+}
+
+.lgd-region--secondary-menu {
+  margin-top: 0;
+}
+
+.navigation--services h2 {
+  font-size: 1.375rem;
+}
+
+.menu--services {
+  list-style: none;
+  padding-left: 0;
+
+  .menu-item a {
+    color: var(--color-accent);
+    font-size: 1.125rem;
+  }
+}
