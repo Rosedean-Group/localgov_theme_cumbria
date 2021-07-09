@@ -1,4 +1,4 @@
-.slp__services .field__items {
+.service-landing-page__services .field__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,11 +8,11 @@
   }
 }
 
-.slp__service-icon {
+.service-landing-page__service-icon {
   display: none;
 }
 
-.slp__service-item {
+.service-landing-page__service-item {
   font-size: 1.125rem;
 
   h2 {
