@@ -42,7 +42,7 @@
   }
 }
 
-.step-list {
+.step-by-step-pages--nav .step-list {
   border-top: 0.0625rem solid var(--color-gray);
   margin-bottom: 4rem !important;
   margin-top: 1rem !important;
@@ -99,6 +99,11 @@
 }
 
 // Step-by-step page
+.localgov-step-by-step-page {
+  border-bottom: 0.0625rem solid var(--color-gray);
+  padding-bottom: var(--spacing-largest);
+}
+
 .step-by-step-pages__relationship {
   background-color: var(--color-white);
   border-bottom: 0.0625rem solid var(--color-accent);
@@ -114,4 +119,49 @@
 
 .step-by-step-pages .step-by-step-pages__relationship {
   display: none;
+}
+
+.step-by-step--prev-next {
+  width: calc(100% / 3 * 2);
+}
+
+.lgd-prev-next__list {
+  justify-content: space-between;
+}
+
+.lgd-prev-next__list-item--next {
+  margin-left: auto;
+}
+
+.lgd-prev-next__link {
+  background-color: var(--color-teal);
+  border: none;
+  border-bottom: var(--border-large);
+  border-bottom-color: var(--color-teal-dark);
+  color: var(--color-white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  padding: 0.625rem 1rem;
+  text-decoration: none;
+  width: 11.75rem;
+
+  &:hover {
+    background-color: var(--color-teal-dark);
+    color: var(--color-white);
+
+    .lgd-prev-next__icon path {
+      fill: var(--color-white);
+    }
+  }
+
+  &:focus {
+    background-color: var(--color-focus);
+    border-bottom-color: var(--color-black);
+    box-shadow: none;
+    color: var(--color-black);
+    .lgd-prev-next__icon path {
+      fill: var(--color-black);
+    }
+  }
 }
