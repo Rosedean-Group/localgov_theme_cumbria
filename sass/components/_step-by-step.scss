@@ -1,5 +1,99 @@
-.page-node-type-localgov-step-by-step-overview {
-  .summaries-control {
-    text-align: right;
+// Ugly specificity and use of !important pending removal of over-specific selectors in localgov_step_by_step, see:
+// https://github.com/localgovdrupal/localgov_step_by_step/issues/41
+
+.summaries-control {
+  text-align: right;
+}
+
+.step-master,
+.step-show {
+  color: var(--color-link) !important;
+  margin-left: 0.375rem;
+  padding: 0 !important;
+
+  &:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--color-link-hover) !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.1875rem !important;
   }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.step-by-step-pages ol.step-list .step .step__title .step-show {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm8.5-107.5l122.8-122.8c4.7-4.7 4.7-12.3 0-17l-22.6-22.6c-4.7-4.7-12.3-4.7-17 0L256 277.8l-91.7-91.7c-4.7-4.7-12.3-4.7-17 0l-22.6 22.6c-4.7 4.7-4.7 12.3 0 17l122.8 122.8c4.7 4.7 12.3 4.7 17 0z'/%3E%3C/svg%3E");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem auto;
+  color: var(--color-black) !important;
+  padding-right: 1.75rem !important;
+
+  &:hover {
+    color: var(--color-black);
+  }
+
+  &[aria-expanded="true"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M264.5 163.5l122.8 122.8c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 234.2l-91.7 91.7c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l122.8-122.8c4.7-4.7 12.3-4.7 17 0zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z'/%3E%3C/svg%3E");
+  }
+}
+
+.step-list {
+  border-top: 0.0625rem solid var(--color-gray);
+  margin-bottom: 4rem !important;
+  margin-top: 1rem !important;
+}
+
+.step-by-step-pages ol.step-list .step:not(:first-child) .step__title {
+  border-top: 0.0625rem solid var(--color-gray);
+}
+
+.step-by-step-pages ol.step-list .step:before {
+  top: 2rem;
+  height: 2.375rem;
+  width: 2.375rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 2.25rem;
+  font-weight: 700;
+  border: 0.0625rem solid var(--color-gray);
+}
+
+.step-by-step-pages ol.step-list .step:not(:last-of-type):after {
+  top: 3rem;
+}
+
+.step-by-step-pages ol.step-list .step {
+  padding-bottom: 1rem;
+}
+
+.step-by-step-pages ol.step-list .step .step__title {
+  font-size: 1.5rem;
+  margin-left: 3.5rem;
+  padding-top: 2rem;
+
+  .step-summary-container {
+    button {
+      font-size: 1rem;
+      margin-left: 0;
+      padding: 0;
+    }
+  }
+}
+
+.step-by-step-pages ol.step-list .step:not(:last-of-type):after {
+  left: 1.125rem;
+}
+
+.step-by-step-pages ol.step-list .step .step__title a {
+  color: var(--color-link);
+}
+
+.step-by-step-pages ol.step-list .step .step__summary {
+  margin-left: 3.5rem;
+  padding-left: 0;
 }

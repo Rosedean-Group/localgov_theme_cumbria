@@ -8,10 +8,10 @@ a:focus {
 
   a {
     &:visited {
-      color: #542c6c;
+      color: var(--color-link-visited);
     }
     &:hover {
-      color: #01244d;
+      color: var(--color-link-hover);
     }
   }
 }
