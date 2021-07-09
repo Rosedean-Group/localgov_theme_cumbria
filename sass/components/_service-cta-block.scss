@@ -17,6 +17,17 @@ a.service-cta-block__link {
   height: 100%;
   padding: 0.625rem 1rem;
 
+  &:focus {
+    svg path {
+      fill: var(--color-black);
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-success-dark);
+    color: var(--color-white);
+  }
+
   &:focus,
   &:hover {
     box-shadow: none;
@@ -24,10 +35,6 @@ a.service-cta-block__link {
 
     .service-cta-block__link-icon {
       left: initial;
-
-      svg path {
-        fill: var(--color-black);
-      }
     }
 
   }
