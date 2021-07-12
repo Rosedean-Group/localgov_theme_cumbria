@@ -1,0 +1,67 @@
+.feedback {
+  border-bottom: 0.3125rem solid var(--color-accent);
+
+  &.inactive {
+    display: none;
+  }
+
+  &-show {
+    align-items: flex-start;
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8125rem 0.9375rem;
+
+    p {
+      font-size: 1.0625rem;
+      margin-bottom: 0;
+    }
+
+    &__badge {
+      background-color: var(--color-focus);
+      color: var(--color-black);
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-right: 0.5rem;
+      padding: 0.125rem 0.3125rem;
+      text-transform: uppercase;
+    }
+
+    &__button {
+      align-items: center;
+      display: flex;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      padding: 0;
+      text-decoration: underline;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        text-decoration-thickness: 0.1875rem;
+      }
+
+      svg {
+        height: 1.125rem;
+        margin-left: 0.5rem;
+        width: 1.125rem;
+      }
+    }
+
+  }
+
+  &__form {
+    background-color: var(--color-light);
+    border-top: 0.3125rem solid var(--color-accent);
+    padding: 3.125rem 1.875rem;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    &.inactive {
+      display: none;
+    }
+  }
+}

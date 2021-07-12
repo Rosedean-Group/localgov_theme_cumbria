@@ -2,3 +2,7 @@ main:
   css:
     theme:
       css/main.css: { weight: 200 }
+  js:
+    js/feedback.js: {}
+  dependencies:
+    - core/drupal

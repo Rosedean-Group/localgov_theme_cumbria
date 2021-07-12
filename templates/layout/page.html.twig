@@ -1,4 +1,75 @@
 {% extends '@localgov_base/layout/page.html.twig' %}
+
   {% block header %}
     {% include active_theme_path() ~ '/templates/layout/header.html.twig' with {'page': page} %}
+  {% endblock %}
+
+  {% block pre_footer %}
+    <div class="lgd-footer__pre-footer feedback js-toggle-container" id="feedback">
+      <div class="lgd-container">
+        <div class="lgd-row">
+          <div class="lgd-row__full feedback-show">
+            <p><span class="feedback-show__badge">New</span> Help improve this site by giving feedback.</p>
+            <button class="feedback-show__button js-toggle-feedback" aria-controls="form__feedback" aria-expanded="false" aria-label="Show feedback form">Show
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lgd-container">
+      <div class="lgd-row">
+        <form class="lgd-row__full feedback__form inactive js-toggle-container" id="form__feedback">
+          <div class="lgd-row">
+            <div class="lgd-row__two-thirds">
+              <h2>Help us improve cumbria.gov.uk</h2>
+              <p>To help us improve cumbria.gov.uk&hellip;</p>
+            </div>
+            <div class="lgd-row__one-third">
+              <button class="feedback-close__button js-toggle-feedback" aria-controls="feedback" aria-label="Hide feedback form">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  {% endblock %}
+
+  {% block footer %}
+  <div class="lgd-footer__footer">
+      <div class="lgd-container">
+        <div class="lgd-row">
+          <div class="lgd-row__one-third">
+            <h2>Contact us</h2>
+            <p>Ask for help if you haven't found what you are looking for in this site.</p>
+            <nav aria-label="Contact">
+              <ul>
+                <li class="cumbria-footer__contact"><a href="#">Send us a message</a></li>
+                <li class="cumbria-footer__other"><a href="#">Other ways to contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="lgd-row__one-third">
+            <h2>Your community</h2>
+
+            <p>Get updates from Cumbria County Council and find out how to get involved in community activities.</p>
+
+            <ul class="cumbria-social" role="list">
+              <li><a href="https://www.facebook.com/cumbriacc"><img src="{{ base_path ~ directory }}/assets/images/facebook.svg" alt="Facebook" /></a></li>
+              <li><a href="https://twitter.com/CumbriaCC"><img src="{{ base_path ~ directory }}/assets/images/twitter.svg" alt="Twitter" /></a></li>
+              <li><a href="https://www.youtube.com/channel/UCkRQJw3PnP5pf-ZERLlSUNw/videos"><img src="{{ base_path ~ directory }}/assets/images/youtube.svg" alt="YouTube" /></a></li>
+              <li><a href="https://www.linkedin.com/company/cumbria-county-council/"><img src="{{ base_path ~ directory }}/assets/images/linkedin.svg" alt="LinkedIn" /></a></li>
+              <li><a href="https://www.instagram.com/cumbriacc/"><img src="{{ base_path ~ directory }}/assets/images/instagram.svg" alt="Instagram" /></a></li>
+            </ul>
+          </div>
+
+          <div class="lgd-row__one-third">
+            <h2>Accessibility</h2>
+            <p>Read about how we aim to make our service accessible for all residents in our <a href="/accessibility">accessibility statement</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   {% endblock %}
