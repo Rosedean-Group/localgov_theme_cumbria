@@ -1,0 +1,27 @@
+.lgd-guide-nav {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-accent);
+  padding: 1.25rem 1.875rem;
+
+  &__title {
+    font-size: var(--font-size-large);
+    margin-top: 0;
+  }
+}
+
+.lgd-guide-nav__list {
+  padding-left: 0;
+}
+
+.lgd-guide-nav__list-item {
+  margin-bottom: var(--spacing);
+  font-size: var(--font-size-medium);
+
+  &::marker {
+    color: transparent;
+  }
+}
+
+.lgd-guide-nav__list-item > a {
+  font-weight: 400;
+}
