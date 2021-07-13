@@ -8,7 +8,6 @@
       context = context || document;
       const feedbackButtons = context.querySelectorAll('.js-toggle-feedback');
       if (!feedbackButtons.length) {
-        alert('Feck');
         return;
       }
 
