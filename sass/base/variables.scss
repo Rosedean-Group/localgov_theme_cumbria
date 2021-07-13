@@ -45,6 +45,18 @@
   --breadcrumbs-font-size: var(--font-size-small);
   --breadcrumbs-padding-vertical: 2.125rem;
   --breadcrumbs-spacing-bottom: 0;
+
+  /* Button Elements (and button-styled links) */
+  --button-padding-vertical: 0.625rem;
+  --button-padding-horizontal: 1rem;
+  --button-text-color-hover: var(--color-white);
+  --button-icon-color: var(--button-text-color);
+  --button-icon-color-hover: var(--button-text-color-hover);
+  --button-border-color: var(--color-info-dark);
+  --button-bg-color: var(--color-info);
+  --button-bg-color-hover: var(--color-success-dark);
+
+  /* Colours */
   --color-accent: #005e7a;
   --color-focus: #fdd24f;
   --color-gray: #adb5bd;
@@ -73,6 +85,8 @@
   --font-size-medium: 1.125rem;
   --font-size-large: 1.375rem;
   --header-logo-width: 8.5rem;
+  --input-padding-horizontal: 0.6875rem;
+  --input-padding-vertical: 0.6875rem;
   --page-title-border: none;
   --page-title-lede-font-size: 1.375rem;
   --page-title-width: 62rem;

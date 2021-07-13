@@ -29,6 +29,8 @@
 
     &__button {
       align-items: center;
+      background: none;
+      border: none;
       display: flex;
       font-size: 1.0625rem;
       font-weight: 700;
@@ -39,6 +41,7 @@
         background-color: transparent;
         color: var(--color-white);
         cursor: pointer;
+        text-decoration: underline;
         text-decoration-thickness: 0.1875rem;
       }
 
