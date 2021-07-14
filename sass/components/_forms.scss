@@ -1,4 +1,6 @@
-input[type=text] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   border: 0.0625rem solid var(--color-black);
   border-radius: 0;
   font-family: var(--font-family);
