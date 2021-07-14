@@ -52,25 +52,25 @@
   --button-icon-color: var(--button-text-color);
   --button-icon-color-hover: var(--button-text-color-hover);
   --button-border-color: var(--color-info-dark);
-  --button-bg-color: var(--color-info);
-  --button-bg-color-hover: var(--color-success-dark);
+  --button-bg-color: var(--color-success);
+  --button-bg-color-hover: var(--color-success-darken);
 
   /* Colours - see http://csmdemo.uk/cumbria-starter/localgov-cumbria-colour-variables.php */
   --color-accent: var(--color-primary);
   --color-active: var(--color-secondary);
   --color-black: #0b0c0c;
   --color-blue: #00599c;
-  --color-blue-darken: darken(var(--color-blue, 10%));
+  --color-blue-darken: #003c69;
   --color-cyan: #00b5e2;
   --color-cyan-tint: rgba(var(--color-cyan), 0.15);
   --color-danger: #b30000;
-  --color-danger-darken: darken(var(--color-danger, 10%));
+  --color-danger-darken: #800000;
   --color-danger-tint: rgba(var(--color-danger), 0.15);
   --color-dark: #003747;
   --color-focus: #fdd24f;
   --color-gray: #adb5bd;
   --color-gray-dark: #595959;
-  --color-gray-darken: darken(var(--color-gray, 10%));
+  --color-gray-darken: #919ca6;
   --color-gray-light: #f3f2f1;
   --color-green: #c4d600;
   --color-green-tint: rgba(var(--color-green), 0.15);
@@ -85,7 +85,7 @@
   --color-pink: #ad3cad;
   --color-pink-tint: rgba(var(--color-pink), 0.15);
   --color-primary: #005e7a;
-  --color-primary-darken: darken(var(--color-primary, 10%));
+  --color-primary-darken: #063747;
   --color-primary-tint: rgba(var(--color-primary), 0.15);
   --color-purple: #830065;
   --color-purple-tint: rgba(var(--color-purple), 0.15);
@@ -98,10 +98,10 @@
   --color-section-post-footer-bg: #f3f2f1;
   --color-section-pre-footer-bg: #fff;
   --color-success: #006818;
-  --color-success-darken: darken(var(--color-success, 10%));
+  --color-success-darken: #08350c;
   --color-success-tint: rgba(var(--color-success), 0.15);
   --color-teal: #237f86;
-  --color-teal-darken: darken(var(--color-teal, 10%));
+  --color-teal-darken: #18595e;
   --color-teal-tint: rgba(var(--color-teal), 0.15);
   --color-warning: #c75000;
   --color-white: #fff;
