@@ -136,7 +136,7 @@
   background-color: var(--color-teal);
   border: none;
   border-bottom: var(--border-large);
-  border-bottom-color: var(--color-teal-dark);
+  border-bottom-color: var(--color-teal-darken);
   color: var(--color-white);
   font-size: 1.125rem;
   font-weight: 700;
@@ -146,7 +146,7 @@
   width: 11.75rem;
 
   &:hover {
-    background-color: var(--color-teal-dark);
+    background-color: var(--color-teal-darken);
     color: var(--color-white);
 
     .lgd-prev-next__icon path {

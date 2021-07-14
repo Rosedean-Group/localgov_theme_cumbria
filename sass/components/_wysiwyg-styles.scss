@@ -27,13 +27,12 @@
   }
 }
 
-.alert-primary {
+.alert-info {
   background-color: var(--color-accent);
   background-image: var(--icon-info-circle);
   color: var(--color-white);
 }
 
-.alert-info,
 .alert-success {
   background-color: var(--color-success);
   background-image: var(--icon-check-circle);
@@ -41,7 +40,7 @@
 }
 
 .alert-danger,
-.alert-fail {
+.alert-primary {
   background-color: var(--color-danger);
   background-image: var(--icon-exclamation-circle);
   color: var(--color-white);

@@ -1,0 +1,34 @@
+.callout {
+  a {
+    color: var(--color-white);
+    text-decoration-thickness: 0.0625rem;
+
+    &:visited,
+    &:hover {
+      color: var(--color-white);
+    }
+
+    &:hover {
+      text-decoration-thickness: 0.1875rem;
+    }
+
+    &:focus {
+      background-color: var(--color-focus);
+      color: var(--color-black);
+    }
+  }
+
+  &-yellow {
+    color: var(--color-black);
+
+    a,
+    a:visited,
+    a:hover {
+      color: var(--color-black);
+    }
+
+    a:focus {
+      background-color: var(--color-white);
+    }
+  }
+}
