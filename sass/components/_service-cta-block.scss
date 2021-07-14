@@ -12,10 +12,15 @@
 }
 
 a.service-cta-block__link {
+  background-color: var(--color-success);
   border-bottom: var(--border-large);
-  border-bottom-color: var(--color-info-dark);
+  border-bottom-color: var(--color-success-darken);
   height: 100%;
   padding: 0.625rem 1rem;
+
+  &:focus {
+    background-color: var(--color-focus);
+  }
 
   &:hover {
     background-color: var(--color-success-darken);
