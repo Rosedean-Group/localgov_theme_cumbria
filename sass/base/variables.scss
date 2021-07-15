@@ -36,7 +36,7 @@
   - The accent colour in our base theme is purple. If you would like it to be
     hotpink, just set --color-accent: hotpink;
 */
-:root {
+body {
   --border-width-large: 0.25rem;
   --breadcrumbs-background-color: var(--color-light);
   --breadcrumbs-border: none;
