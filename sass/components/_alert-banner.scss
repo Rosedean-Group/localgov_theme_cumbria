@@ -38,9 +38,33 @@
       text-decoration-thickness: 0.1875rem;
     }
 
+    &:focus {
+      color: var(--color-black);
+
+      svg {
+        fill: var(--color-black);
+      }
+    }
+
     svg {
       height: 1.5rem;
       margin-left: 0.5rem;
+    }
+  }
+
+  &--notable-person,
+  &--major,
+  &--announcement {
+    button {
+      color: var(--color-white);
+
+      &:hover {
+        color: var(--color-white);
+      }
+
+      svg {
+        fill: var(--color-white);
+      }
     }
   }
 }
