@@ -26,3 +26,16 @@ function localgov_theme_cumbria_preprocess_page(&$variables) {
     ],
   ];
 }
+
+/**
+ * Implements hook_page_attachements_alter().
+ * @param array $attachments
+ */
+function localgov_theme_cumbria_page_attachments_alter(array &$attachments) {
+  foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+    // Remove default 'generator' metatag - we define it in the metatag module config
+    if ($attachment[1] == 'system_meta_generator') {
+      unset($attachments['#attached']['html_head'][$key]);
+    }
+  }
+}
