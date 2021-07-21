@@ -19,3 +19,29 @@ a:focus {
 .lgd-region--content-bottom {
   margin-bottom: 4.375rem;
 }
+
+table {
+  border: none;
+}
+
+th,
+td {
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+th {
+  font-size: var(--font-size-h5);
+  line-height: 1.625rem;
+  vertical-align: bottom;
+}
+
+td {
+  font-size: 1.125rem;
+}
+
+thead tr,
+tbody tr {
+  border-bottom: var(--table-border);
+}
