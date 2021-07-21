@@ -45,6 +45,10 @@ body {
   --breadcrumbs-padding-vertical: 2.125rem;
   --breadcrumbs-spacing-bottom: 0;
 
+  /* Elements */
+  --table-bg-color: var(--color-white);
+  --table-border: 0.0625rem solid var(--color-gray);
+
   /* Button Elements (and button-styled links) */
   --button-padding-vertical: 0.625rem;
   --button-padding-horizontal: 1rem;
