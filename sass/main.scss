@@ -1,3 +1,4 @@
+@import "base/mixins";
 @import "base/variables";
 @import "base/typography";
 @import "base/base";
@@ -20,6 +21,7 @@
 @import "components/service-cta-block";
 @import "components/service-landing-page";
 @import "components/service-sublanding-page";
+@import "components/sitewide-search";
 @import "components/social";
 @import "components/step-by-step";
 @import "components/teaser";
