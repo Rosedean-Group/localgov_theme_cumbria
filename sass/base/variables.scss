@@ -150,4 +150,11 @@ body {
   --sidebar-exposed-form-padding-vertical: 0;
   --step-by-step-part-of-color: var(--color-black);
   --width-container: 71.25rem; /* 1140px */
+
+  /* Alert Banner */
+  --alert-banner-bg-color: var(--color-teal); /* Announcement */
+  --alert-banner-bg-color-minor: var(--color-focus);
+  --alert-banner-bg-color-major: var(--color-danger);
+  --alert-banner-bg-color-notable-person: var(--color-black);
+  --alert-banner-color: var(--color-white);
 }
