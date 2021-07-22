@@ -27,6 +27,24 @@ function localgov_theme_cumbria_preprocess_page(&$variables) {
   ];
 }
 
+function localgov_theme_cumbria_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form['#id'] == 'views-exposed-form-localgov-sitewide-search-sitewide-search-page') {
+    foreach (\Drupal\Core\Render\Element::children($form) as $key) {
+      $form[$key]['#attributes']['data-twig-suggestion'] = $form['#id'];
+    }
+    $form['actions']['submit']['#attributes']['data-twig-suggestion'] = 'search--submit';
+  }
+}
+
+function localgov_theme_cumbria_theme_suggestions_input_alter(&$suggestions, array $variables) {
+  $element = $variables['element'];
+  if (isset($element['#attributes']['data-twig-suggestion'])) {
+    $suggestion_suffix = str_replace(['-'], '_', $element['#attributes']['data-twig-suggestion']);
+    $suggestions[] = 'input__' . $element['#type'] . '__' . $suggestion_suffix;
+  }
+}
+
 /**
  * Implements hook_page_attachements_alter().
  * @param array $attachments
