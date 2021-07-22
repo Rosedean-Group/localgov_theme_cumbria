@@ -1,0 +1,12 @@
+.search-results {
+  padding-left: 1.125rem;
+}
+
+.search-result {
+  border-bottom: 1px solid var(--color-light);
+  padding-bottom: 2rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+}

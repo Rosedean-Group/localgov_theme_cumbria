@@ -64,8 +64,9 @@
   }
 }
 
-/* Search Region */
-.lgd-region--search form {
+/* Search forms - header and search page */
+#views-exposed-form-localgov-sitewide-search-sitewide-search-page,
+#views-exposed-form-localgov-sitewide-search-sitewide-search-page-block {
   label {
     @include visually-hidden;
   }
@@ -77,23 +78,31 @@
       outline-offset: -0.1875rem;
     }
   }
+}
 
-  .button--search {
+#views-exposed-form-localgov-sitewide-search-sitewide-search-page {
+  align-items: center;
+  display: flex;
+
+  input[type=text] {
+    padding: calc(0.625rem - 1px);
+  }
+}
+
+.button--search {
+  background-color: var(--color-dark);
+  border-bottom: none;
+  height: 2.75rem;
+  padding: 0;
+  width: 2.75rem;
+
+  svg {
+    width: 1.375rem;
+  }
+
+  &:focus {
     background-color: var(--color-dark);
-    border-bottom: none;
-    height: 2.75rem;
-    padding: 0;
-    width: 2.75rem;
-
-    svg {
-      width: 1.375rem;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: var(--color-dark);
-      outline: 0.1875rem solid var(--color-focus);
-      outline-offset: -0.1875rem;
-    }
+    outline: 0.1875rem solid var(--color-focus);
+    outline-offset: -0.1875rem;
   }
 }
