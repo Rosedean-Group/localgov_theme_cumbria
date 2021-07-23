@@ -163,4 +163,9 @@ body {
   --alert-banner-bg-color-major: var(--color-danger);
   --alert-banner-bg-color-notable-person: var(--color-black);
   --alert-banner-color: var(--color-white);
+
+  /* Service Statuses */
+  --service-statuses-container-bg-color: var(--color-teal);
+  --service-statuses-list-border-color: var(--color-gray);
+  --service-statuses-padding: 0.75rem;
 }

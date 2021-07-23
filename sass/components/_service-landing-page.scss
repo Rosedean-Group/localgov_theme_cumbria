@@ -1,10 +1,14 @@
-.service-landing-page__services .field__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.service-landing-page__services {
+  margin-bottom: 3rem;
 
-  & > * {
-    width: calc(33% - var(--spacing-mega));
+  .field__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > * {
+      width: calc(33% - var(--spacing-mega));
+    }
   }
 }
 
