@@ -1,0 +1,11 @@
+/* Expand width of CKEDitor Styles drop-down */
+.cke_combopanel {
+  width: auto !important;
+  max-width: 600px !important;
+  height: 400px !important;
+}
+
+.cke_combo__styles > a > .cke_combo_text {
+  width: auto !important;
+  max-width: 240px !important;
+}

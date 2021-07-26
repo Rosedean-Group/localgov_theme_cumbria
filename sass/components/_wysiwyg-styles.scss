@@ -45,3 +45,27 @@
   background-image: var(--icon-exclamation-circle);
   color: var(--color-white);
 }
+
+/* Inset text */
+.inset-text {
+  background-color: var(--color-teal-tint);
+  border-left: 0.3125rem solid var(--color-teal);
+  padding: 1.25rem 1.875rem;
+}
+
+/* Action link */
+.lgd-action-link {
+  background-image: var(--icon-arrow-circle-right);
+  padding: 1rem 1rem 1rem 2.375rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.875rem;
+  font-size: var(--font-size-h5);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1875rem;
+  }
+}

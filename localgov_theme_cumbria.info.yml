@@ -7,6 +7,9 @@ base theme: "localgov_base"
 libraries:
   - localgov_theme_cumbria/main
 
+ckeditor_stylesheets:
+  - css/main.css
+
 regions:
   tabs: "Tabs"
   header: "Header"
