@@ -45,3 +45,22 @@ thead tr,
 tbody tr {
   border-bottom: var(--table-border);
 }
+
+/* Ensure consistent spacing between content-top and main content - this is ugly */
+.page-node-type-localgov-step-by-step-page,
+.page-node-type-localgov-step-by-step-overview,
+.page-node-type-localgov-directory,
+.page-node-type-localgov-directories-venue,
+.page-node-type-localgov-directories-page,
+.page-node-type-localgov-services-status {
+
+  .lgd-region--content-top {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.field--type-text-with-summary > p.alert,
+.localgov-services-page .field--type-text-with-summary > p,
+.block-system-main-block > .service-statuses {
+  margin-top: 2.5rem;
+}
