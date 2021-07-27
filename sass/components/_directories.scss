@@ -12,3 +12,23 @@
 .localgov-search-channel {
   display: none;
 }
+
+.field--name-postal-address {
+  .field__label {
+    font-size: var(--font-size-h5);
+    margin-bottom: 1rem;
+  }
+}
+
+.localgov-directories-venue__enquiries {
+  margin-top: var(--spacing-mega);
+
+  h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
