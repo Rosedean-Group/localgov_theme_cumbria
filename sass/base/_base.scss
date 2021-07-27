@@ -59,8 +59,7 @@ tbody tr {
   }
 }
 
-.field--type-text-with-summary + p.alert,
-.localgov-services-page .field--type-text-with-summary + p,
-.block-system-main-block + .service-statuses {
+.field--type-text-with-summary p.alert:first-child,
+.block-system-main-block > .service-statuses {
   margin-top: 2.5rem;
 }
