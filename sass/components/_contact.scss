@@ -1,0 +1,85 @@
+/* Styles contact component on service landing page and Paragraph contact type */
+
+.service-landing-page__contact,
+.paragraph__contact,
+.localgov-contact {
+  background-color: var(--color-light);
+  border-left: var(--border-width-large) var(--border-style) var(--color-teal);
+  padding: var(--spacing-larger);
+
+  &-title,
+  &-heading,
+  &-subheading {
+    margin-top: 0;
+  }
+
+  &-headings .localgov-contact-subheading {
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    margin-bottom: 0;
+  }
+
+  &-list {
+    padding-left: 0;
+  }
+
+  h2,
+  &-heading{
+    font-size: var(--font-size-h3);
+    margin-top: 0;
+  }
+
+  h3,
+  &-subheading{
+    font-size: var(--font-size-h5);
+    margin-bottom: 1rem;
+  }
+
+  .field__label {
+    display: none;
+  }
+
+  .field--name-localgov-address-first-line,
+  .office-hours {
+    font-size: 1.125rem;
+  }
+}
+
+.bg-icon {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.125rem;
+  padding-left: 2rem;
+
+  @at-root li#{&} {
+    list-style: none;
+  }
+
+  &.bg-icon__envelope {
+    background-image: var(--icon-envelope);
+  }
+
+  &.bg-icon__facebook {
+    background-image: var(--icon-facebook);
+  }
+
+  &.bg-icon__map-marker-alt {
+    background-image: var(--icon-map-marker-alt);
+    padding-bottom: 0.125rem;
+    padding-top: 0.125rem;
+  }
+
+  &.bg-icon__minicom {
+    background-image: var(--icon-minicom);
+  }
+
+  &.bg-icon__phone {
+    background-image: var(--icon-phone);
+  }
+
+  &.bg-icon__twitter {
+    background-image: var(--icon-twitter);
+  }
+}
