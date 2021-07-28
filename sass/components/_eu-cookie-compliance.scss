@@ -1,0 +1,16 @@
+.sliding-popup-bottom,
+.sliding-popup-top {
+  text-align: left;
+}
+
+.eu-cookie-compliance {
+  padding: 1.875rem 0;
+
+  &__title h1 {
+    font-size: var(--font-size-h4);
+  }
+
+  &__button-agree {
+    margin-right: 1.5rem;
+  }
+}

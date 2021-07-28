@@ -20,6 +20,18 @@ a:focus {
   margin-bottom: 4.375rem;
 }
 
+dl {
+  margin-bottom: var(--vertical-rhythm-spacing);
+}
+
+dt {
+  font-weight: 700;
+}
+dd {
+  margin-bottom: var(--spacing-large);
+  margin-left: 0;
+}
+
 table {
   border: none;
 }
@@ -59,7 +71,7 @@ tbody tr {
   }
 }
 
-.field--type-text-with-summary p.alert:first-child,
+.field--type-text-with-summary p:first-child,
 .block-system-main-block > .service-statuses {
   margin-top: 2.5rem;
 }
