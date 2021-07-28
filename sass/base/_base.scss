@@ -72,6 +72,11 @@ tbody tr {
 }
 
 .field--type-text-with-summary p.alert:first-child,
+.localgov-services-page__content .field--type-text-with-summary > p:first-child,
 .block-system-main-block > .service-statuses {
   margin-top: 2.5rem;
+}
+
+.page-node-type-localgov-step-by-step-page .field--type-text-with-summary > h2:first-child {
+  margin-top: 0;
 }
