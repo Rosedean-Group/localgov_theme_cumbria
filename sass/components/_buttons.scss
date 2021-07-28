@@ -12,11 +12,8 @@ a.btn.btn-start {
   padding: var(--button-padding-vertical) var(--button-padding-horizontal);
   text-decoration: none;
 
-  &:hover {
-    background-color: var(--button-bg-color-hover);
-    color: var(--button-text-color-hover);
-    cursor: pointer;
-    text-decoration: none;
+  &:visited {
+    color: var(--button-text-color);
   }
 
   &:focus {
@@ -26,9 +23,13 @@ a.btn.btn-start {
     text-decoration: none;
   }
 
-  &:visited {
-    color: var(--button-text-color);
+  &:hover {
+    background-color: var(--button-bg-color-hover);
+    color: var(--button-text-color-hover);
+    cursor: pointer;
+    text-decoration: none;
   }
+
 }
 
 a.btn.btn-start {
