@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * This is a template file for a banner prompting user to give their consent for
+ * the website to set cookies.
+ *
+ * When overriding this template it is important to note that jQuery will use
+ * the following classes to assign actions to buttons:
+ *
+ * agree-button      - agree to setting cookies
+ * find-more-button  - link to an information page
+ *
+ * Variables available:
+ * - message:  Contains the text that will be display whithin the banner
+ * - agree_button: Label for the agree button
+ * - disagree_button: Label for the disagree button
+ */
+#}
+
+<div role="alert" aria-labelledby="eu-cookie-compliance__title" class="lgd-container eu-cookie-compliance">
+  <div class="lgd-row lgd-row__two-thirds eu-cookie-compliance__content">
+    <div class="eu-cookie-compliance__title">
+      <h1 id="eu-cookie-compliance__title">Cookies on cumbria.gov.uk</h1>
+    </div>
+    <div class="eu-cookie-compliance__message">
+      {{ message }}
+    </div>
+    <div class="eu-cookie-compliance__buttons">
+      <button type="button" class="agree-button eu-cookie-compliance__button-agree">{{ agree_button }}</button>
+      <a href="/cookies" class="btn">Manage cookie settings</a>
+    </div>
+  </div>
+</div>
