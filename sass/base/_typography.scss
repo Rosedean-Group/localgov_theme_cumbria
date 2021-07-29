@@ -10,7 +10,7 @@ p,
 ul,
 ol,
 dl {
-  font-size: 1.125rem;
+  font-size: var(--font-size-medium);
   margin-bottom: 1rem;
 }
 
@@ -51,4 +51,29 @@ h6,
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   text-decoration: none;
+}
+
+@media screen and (max-width: 48rem) {
+
+  body {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.625rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.375rem;
+    --font-size-h5: 1.125rem;
+    --font-size-h6: 1.125rem;
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.375rem;
+    --page-title-lede-font-size: 1.1875rem;
+  }
+
+  .lgd-region__inner--content {
+    p,
+    ul,
+    ol,
+    dl {
+      margin-top: 1rem;
+    }
+  }
 }

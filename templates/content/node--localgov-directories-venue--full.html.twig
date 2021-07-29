@@ -129,7 +129,7 @@ better readability.
           </li>
         {% endif %}
         {% if node.localgov_directory_website.value %}
-          <li class="bg-icon bg-icon__link">{{ content.localgov_directory_website }}</li>
+          <li class="bg-icon bg-icon__link"><a href="{{ node.localgov_directory_website.uri }}">{{ 'Visit website'|t }}</a></li>
         {% endif %}
       </ul>
     </div>

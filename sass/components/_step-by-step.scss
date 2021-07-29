@@ -164,3 +164,41 @@
     }
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .step-by-step-pages .step-master,
+  .step-by-step-pages ol.step-list .step .step__title .step-show {
+    font-size: var(--font-size-small);
+  }
+
+  .step-by-step-pages ol.step-list .step .step__title {
+    font-size: 1.375rem;
+  }
+
+  .step-by-step-pages ol.step-list .step .step__title .step-summary-container button {
+    font-size: var(--font-size-small);
+  }
+
+  .step-by-step-pages__relationship,
+  .step-by-step-pages__relationship .step-by-step-pages__part-of {
+    font-size: 1.1875rem;
+  }
+
+  .step-by-step--prev-next {
+    width: 100%;
+  }
+
+  .lgd-prev-next__link {
+    margin-bottom: 0.5rem;
+  }
+
+  ul.lgd-prev-next__list {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .lgd-prev-next__list-item--next {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
