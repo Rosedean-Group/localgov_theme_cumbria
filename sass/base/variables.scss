@@ -36,7 +36,11 @@
   - The accent colour in our base theme is purple. If you would like it to be
     hotpink, just set --color-accent: hotpink;
 */
+
 body {
+  --width-container: 71.25rem; /* 1140px */
+  --width-medium: 58rem;
+
   --border-width-large: 0.25rem;
   --breadcrumbs-background-color: var(--color-light);
   --breadcrumbs-border: none;
@@ -128,7 +132,9 @@ body {
   --font-size-medium: 1.125rem;
   --font-size-large: 1.375rem;
 
+  /* Header */
   --header-logo-width: 8.5rem;
+  --header-logo-width-small: 6.5rem;
   --header-search-button-color: var(--color-white);
   --header-search-button-bg-color: var(--color-dark);
   --header-search-button-color-hover: var(--color-white);
@@ -165,7 +171,6 @@ body {
   --sidebar-exposed-form-bg-color: var(--color-white);
   --sidebar-exposed-form-padding-vertical: 0;
   --step-by-step-part-of-color: var(--color-black);
-  --width-container: 71.25rem; /* 1140px */
 
   /* Alert Banner */
   --alert-banner-bg-color: var(--color-teal); /* Announcement */

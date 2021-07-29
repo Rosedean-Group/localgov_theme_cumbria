@@ -24,6 +24,12 @@
         text-decoration-thickness: 0.1875rem;
       }
     }
+
+    + .menu-item {
+      @media screen and (max-width: 62rem) {
+        margin-left: 0;
+      }
+    }
   }
 
   + .menu-item {

@@ -68,3 +68,18 @@
     }
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .localgov-alert-banner__inner {
+    flex-direction: column;
+  }
+
+  .localgov-alert-banner__dismiss {
+    margin-top: 1rem;
+  }
+
+  .localgov-alert-banner__close {
+    margin-left: -0.5rem;
+    padding: 0.5rem;
+  }
+}

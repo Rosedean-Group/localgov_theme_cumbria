@@ -79,3 +79,33 @@
     text-align: right;
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .lgd-footer__footer {
+    padding: 3.75rem 1rem;
+
+    .lgd-row__one-third {
+      margin-bottom: 3rem;
+      padding-right: 0;
+    }
+  }
+
+  .lgd-footer__post-footer {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    .menu--footer {
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+
+      li:not(:first-child) {
+        margin-left: 0;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .copyright {
+      text-align: left;
+    }
+  }
+}

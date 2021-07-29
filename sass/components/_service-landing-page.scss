@@ -11,7 +11,15 @@
       justify-content: space-between;
 
       & > * {
-        width: calc(33% - var(--spacing-mega));
+        width: calc(33% - var(--spacing-larger));
+
+        @media screen and (max-width: 57rem) {
+          width: calc(50% - var(--spacing-larger));
+        }
+
+        @media screen and (max-width: 37.5rem) {
+          width: 100%;
+        }
       }
     }
   }
