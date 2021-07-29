@@ -15,3 +15,20 @@
     margin-right: 1.5rem;
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .sliding-popup-bottom,
+  .sliding-popup-top {
+    padding: 0 1rem;
+  }
+
+  .eu-cookie-compliance__buttons {
+    button,
+    a.btn {
+      display: block;
+      font-size: 1rem;
+      margin-top: 0.9375rem;
+      width: 15.625rem;
+    }
+  }
+}

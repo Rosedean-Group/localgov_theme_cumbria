@@ -10,6 +10,8 @@
     background-color: var(--color-accent);
     display: flex;
     justify-content: space-between;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
     padding: 0.8125rem 0.9375rem;
 
     p {
@@ -65,6 +67,21 @@
 
     &.inactive {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .feedback-show {
+    display: flex;
+
+    p {
+      display: flex;
+    }
+
+    &__badge {
+      height: 1.6rem;
+      margin-right: 1rem;
     }
   }
 }

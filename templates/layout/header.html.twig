@@ -4,7 +4,7 @@
 {% endif %}
 
 <header class="lgd-header">
-	<div class="lgd-container">
+	<div class="lgd-container padding-horizontal">
 		<div class="lgd-row">
 			<div class="lgd-row__full">
 				<div class="lgd-header__inner">
@@ -28,8 +28,18 @@
 									aria-expanded="false"
 									aria-label="{{ 'Toggle Primary Navigation'|t }}"
 								>
-									<span class="lgd-header__toggle-text lgd-header__toggle-text--primary">{{ 'Menu'|t }}</span>
-									<span class="lgd-header__toggle-icon lgd-header__toggle-icon--primary"></span>
+                  <svg role="img"
+                       height="22"
+                       width="22"
+                       fill="#fff"
+                       xmlns="http://www.w3.org/2000/svg"
+                       aria-hidden="true"
+                       focusable="false"
+                       viewBox="0 0 448 512">
+                    <path id="primary-closed" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"/>
+                    <path id="primary-open" d="M211.6 256l107.72 -107.72c6.23 -6.23 6.23 -16.34 0 -22.58l-25.03 -25.03c-6.23 -6.23 -16.34 -6.23 -22.58 0L164 208.4 56.28 100.68c-6.23 -6.23 -16.34 -6.23 -22.58 0L8.68 125.7c-6.23 6.23 -6.23 16.34 0 22.58L116.4 256 8.68 363.72c-6.23 6.23 -6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L164 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03 -25.03c6.23 -6.23 6.23 -16.34 0 -22.58L211.6 256z"/>
+                  </svg>
+                  <span class="visually-hidden">Menu</span>
 								</button>
 							{% endif %}
 						</div>
