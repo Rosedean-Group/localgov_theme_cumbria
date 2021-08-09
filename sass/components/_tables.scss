@@ -54,13 +54,13 @@ table td:last-child {
 }
 
 table th {
-  font-size: 1rem;
   text-align: left;
   background: var(--color-light);
 }
 
 table th,
 table td {
+  font-size: 1rem;
   padding: 0.375rem 0.75rem;
   border: 0.0625rem solid var(--color-gray);
 }
