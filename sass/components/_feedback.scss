@@ -102,6 +102,12 @@
     &.inactive {
       display: none;
     }
+
+    &-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 116%;
+    }
   }
 
   &__content {

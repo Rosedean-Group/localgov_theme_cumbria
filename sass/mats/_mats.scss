@@ -7,7 +7,7 @@
 /* Custom radio controls */
 label.custom-control.custom-radio .custom-control-indicator,
 label.custom-control.custom-checkbox .custom-control-indicator {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .app-header.navbar .navbar-brand {
@@ -28,9 +28,11 @@ body {
 }
 
 div#mats_content_wrapper {
-  background-color: #f1f9fe;
+  background-color: #f1f9fe !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+  margin-bottom: 0 !important;
+  padding: 0 1rem !important;
 }
 
 a:link,
@@ -173,6 +175,10 @@ label.validation_warning {
 fieldset .radio_choices-row {
   margin-bottom: 1rem;
   min-width: 100%;
+
+  @media screen and (max-width: 960px) {
+    margin-bottom: 0;
+  }
 }
 
 .radio_choices.vertical .radio_choices-row label {
