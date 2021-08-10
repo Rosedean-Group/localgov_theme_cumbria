@@ -1,3 +1,518 @@
-div#mats_content_wrapper {
-  background-color: var(--color-light);
+/* Label font size */
+.title-above label.col-sm-12,
+.radio_choices.vertical .radio_choices-row label {
+  font-size: 1.125rem;
 }
+
+/* Custom radio controls - */
+label.custom-control.custom-radio .custom-control-indicator,
+label.custom-control.custom-checkbox .custom-control-indicator {
+  background-color: #fff;
+}
+
+.app-header.navbar .navbar-brand {
+  background-size: auto calc(92% - 1rem); }
+
+/* Cumbria entered the below */
+#toast-container {
+  display: none; }
+
+/*fix the opensans on IE issue*/
+
+body {
+  font-family:OpenSans, sans-serif !important;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family:OpenSans, sans-serif !important;
+}
+
+.icon-globe:before {
+  display: none; }
+
+body#page-login #mats_content_wrapper {
+  border-top: none; }
+
+body#page-login {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: #ffffff !important; }
+
+
+
+body#page-login .input-group-addon, body#page-login .form-control {
+  border: 1px solid #005e7a;
+}
+
+body#page-login .matssoft-workspace {
+  width: initial; }
+
+body#page-login .app-body {
+  background: #ffffff !important; }
+
+body#page-login .card {
+  background-color: #f0f3f5; }
+
+body#page-login .card-group.mb-0:nth-of-type(2) {
+  padding: 1.3rem; }
+
+body#page-login h2, body#page-login p, body#page-login label {
+  color: #00537a !important;
+}
+
+body#page-login h2 {
+  margin-top: 0px;
+}
+
+/* hide interface dropdown */
+ul.nav.navbar-nav[title="Click here to switch Interfaces"] {
+  display: none; }
+
+/* make the header scroll like the GOV site */
+body[data-environment="interface"] .header-fixed .app-header {
+  position: absolute;
+  z-index: 1020;
+  width: 100%; }
+
+/* remove these importants */
+body, body.webpage {
+  font-size: 1rem !important; }
+
+body {
+  background-color: #f1f9fe !important;
+}
+
+.main .container-fluid {
+  padding: 0px !important; }
+
+div#mats_content_wrapper {
+  background-color: #f1f9fe;
+  border-radius: 0 !important;
+  box-shadow: none !important; }
+
+/*@media (min-width: 576px) {
+  .VIEWPORT {
+    display: none !important; } }*/
+@media (min-width: 992px) {
+  .sidebar-top .sidebar {
+    display: none !important; }
+
+  .sidebar-top .main {
+    top: 0px !important; }
+
+  ol.breadcrumb.page_toolbar {
+    position: absolute !important;
+    top: 0 !important;
+    right: 10px !important;
+    z-index: 1019; } }
+footer.app-footer {
+  background-color: #dee0e2;
+  color: #454a4c;
+  font-size: 14px;
+  border-top: 1px solid #a1acb2;
+  padding-top: 33px;
+  padding-bottom: 40px; }
+
+a:link, .btn.btn-link:link {
+  color: #005ea5; }
+a:active, .btn.btn-link:active {
+  color: #2b8cc4; }
+a:focus, .btn.btn-link:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47; }
+
+body#page-login .card-body .btn-primary {
+  color: #e6e6e6;
+  font-weight: bold; }
+
+/* Welcome page specific */
+/* possibly needs reinstating .login-link */
+.btn.btn-link {
+  font-size: 19px;
+  padding: 0 0.2rem !important;
+  text-decoration: underline; }
+
+.btn.btn-link.forgotten_password {
+  font-size: 0.8rem; }
+
+.webpage_link .icon-globe:before {
+  /* better icon but removed: content: "\e002"; */
+  content: none; }
+
+.Greeting span.col-form-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 0; }
+
+/* body:not(#page-login) p, .wrapper li {
+    font-size: 19px;
+} */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: OpenSans, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px; }
+
+h2:not(#sub_page_title) {
+  margin-bottom: 40px !important;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 45px; }
+
+h3[id^="cell_title"] {
+  font-size: 24px;
+  line-height: 1.25;
+  padding-top: 10px;
+  border-top: 2px solid #005ea5; }
+
+h4 {
+  margin-top: 1.5rem; }
+
+/* Form styling */
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.5rem + 2px) !important; }
+
+/* Easy date picker styling */
+
+input.easy-date-picker-day:not([size]):not([multiple]) {
+  height: calc(2.5rem + 2px) !important; }
+
+input.easy-date-picker-year:not([size]):not([multiple]) {
+  height: calc(2.5rem + 2px) !important; }
+
+
+.dob-date-label {
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size:1.2rem;
+  background-color:#e8ebec;
+  border-left: #005e7a solid 8px;
+  margin-top:5px;
+}
+
+span.easy_date_friendly{
+  color:#00537a;
+}
+
+
+body:not(#page-login) .form-control {
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+  color: black !important;
+  border: 1px solid #000000 !important; }
+
+input.btn.bg-green, a.btn.bg-green {
+  font-size: 19px;
+  line-height: 1;
+  /* GOV UK */
+  /*    background-color: #00823b;
+      -webkit-box-shadow: 0 2px 0 #003618;
+      box-shadow: 0 2px 0 #003618; */
+  /* CUMBRIA */
+  background-color: #005E7A;
+  -webkit-box-shadow: 0 2px 0 #062b3a;
+  box-shadow: 0 2px 0 #062b3a;
+  padding: 7px 10px;
+  border: 2px solid transparent;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  margin-bottom: 32px;
+  border-radius: 0; }
+input.btn.bg-green:hover, a.btn.bg-green:hover {
+  /* GOV UK */
+  /*    background-color: #00692f; */
+  background-color: #D1E6F1;
+  color: #005E7A;
+  border: 2px solid #005E7A;
+  -webkit-box-shadow: 0 2px 0 #ffffff;
+  box-shadow: 0 2px 0 #ffffff; }
+input.btn.bg-green:hover:active, a.btn.bg-green:hover:active {
+  color: #005E7A; }
+input.btn.bg-green:hover:focus, a.btn.bg-green:hover:focus {
+  color: #062b3a; }
+input.btn.bg-green:active, a.btn.bg-green:active {
+  top: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  text-decoration: none; }
+input.btn.bg-green:focus, a.btn.bg-green:focus {
+  background-color: #ffffff;
+  color: #062b3a;
+  border: 2px solid #005E7A; }
+
+.custom-control-indicator {
+  width: 2rem !important;
+  height: 2rem !important;
+  background-color: #fff;
+  border: 2px solid black; }
+
+label.validation_error, label.validation_warning {
+  color: #b10e1e;
+  font-size: inherit;
+  margin-top: 0.5rem; }
+
+.action_link.btn.btn .fa-bullhorn:before {
+  content: "\f0d9"; }
+
+.action_link.btn.btn {
+  color: black;
+  text-decoration: none;
+  font-size: 16px !important;
+  border-bottom: 1px solid black; }
+
+@media (min-width: 769px) {
+  h2#sub_page_title {
+    margin-top: 30px; }
+
+  .navbar-brand {
+    /*  margin-left: 16.666667%; */
+    margin-left: calc(50% - 480px); }
+
+  .matssoft-workspace {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    /*  margin-left: 16.666667%;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%; */ }
+
+  /* div#mats_content_wrapper {
+        border-top: 10px solid #005ea5;
+        box-shadow: none;
+  } */ }
+/* nudge the cross again */
+.relation_path_type_ahead_search_wrapper .remove_value {
+  top: 6px !important; }
+
+/* commented out so lat long inputs are displayed - by Craig on 01/07/2019
+
+input.valid_lat_long {
+  display: none; } */
+
+/* hub panels [see templates] */
+.gov_cardcontainer {
+  background-color: #f8f8f8;
+  min-height: 220px !important; }
+
+.gov_card h3[style] a {
+  cursor: pointer;
+  color: #185ea5;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  display: block; }
+
+.gov_card h3[style] a:hover {
+  color: #005EA5;
+  text-decoration: underline; }
+
+.gov_card h3[id^="cell_title"] {
+  padding-top: 0 !important;
+  border-top: none !important;
+  color: #185ea5;
+  margin-bottom: 0;
+  display: block; }
+
+.gov_card {
+  padding: 1.3em;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 300 !important;
+  color: #151b1e;
+  text-align: left;
+  background-color: #dee0e2;
+  color: #333; }
+
+.gov_card:hover {
+  background-color: #f8f8f8 !important; }
+
+.gov_cardcontent {
+  padding: 1.3em;
+  font-family: Muli;
+  background-color: #f8f8f8;
+  height: 80px; }
+
+.gov_cardcontent p {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: #0b0c0c;
+  text-align: left; }
+
+.webpage h4 {
+  margin-top: 1rem;
+  font-weight: 700; }
+
+/* PE CUMBRIA CSS */
+/* APP HEADER */
+.app-header.navbar {
+  border-bottom: 4px #005E7A solid !important;
+  height: 130px !important; }
+
+@media (max-width: 991px) {
+  [data-environment=webpage] .app-header {
+    flex: 0 0 130px; }
+
+  [data-environment=webpage].header-fixed .app-body {
+    margin-top: 10px !important; }
+
+  [data-environment=webpage] .app-header.navbar {
+    background-color: #ffffff !important;
+    position: initial !important; } }
+.header-fixed .app-body {
+  margin-top: 10px !important; }
+
+.app-header.navbar .navbar-brand {
+  width: 209px !important;
+  height: 105px !important; }
+
+/* Radio buttons */
+fieldset .radio_choices-row {
+  margin-bottom: 1rem;
+  min-width: 100%; }
+
+.radio_choices.vertical .radio_choices-row label {
+  margin: 0px !important; }
+
+label.custom-control.custom-radio {
+  min-height: 50px;
+  padding: 0.5rem;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  label.custom-control.custom-radio {
+    max-width: 66%;
+    min-width: 66%; } }
+.radio_choices.horizontal, .radio_choices.vertical {
+  margin-top: 1rem; }
+
+.radio_choices.horizontal label.custom-control.custom-radio {
+  max-width: initial;
+  min-width: initial;
+  padding-right: 1.5rem; }
+
+.radio_choices.horizontal fieldset .radio_choices-row {
+  min-width: initial; }
+
+span.custom-control-indicator {
+  top: 0.75rem;
+  left: 0.5rem;
+  width: 1.5rem !important;
+  height: 1.5rem !important; }
+
+span.custom-control-description {
+  margin-left: 2.6rem;
+  margin-top: 0.1rem;
+  letter-spacing: 0.3px; }
+
+.custom-radio .custom-control-input:checked ~ .custom-control-description {
+  color: #115675;
+  font-weight: bold;
+  letter-spacing: -0.2px; }
+
+/* @media (min-width: 768px) {
+span.custom-control-description {
+    margin-top: 0.2rem;
+}
+} */
+/* Back button */
+.webpage_link.btn [class^="icon-"], .webpage_link.btn [class*=" icon-"] {
+  display: none; }
+
+.govuk-back-link a {
+  font-size: 1rem;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 14px;
+  border-bottom: 1px solid #0b0c0c;
+  text-decoration: none !important; }
+.govuk-back-link a:link, .govuk-back-link a:visited, .govuk-back-link a:hover, .govuk-back-link a:active, .govuk-back-link a:focus {
+  color: #0b0c0c !important; }
+
+.govuk-back-link a:before {
+  content: "\f0d9";
+  display: initial;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 0.7rem; }
+
+/*  .govuk-back-link .wrapper {
+    margin: 15px 0;
+}
+
+.govuk-back-link .wrapper a {
+    padding-left: 0;
+} */
+/* Header Styles */
+h2#sub_page_title {
+  /*    font-weight: bold; */
+  display: none;
+  font-weight: normal;
+  font-family: 'OpenSans', sans-serif;
+  color: #005e7a;
+  font-size: 40px; }
+
+h3 {
+  font-weight: bold !important;
+  color: #005e7a !important;
+  border: none !important;
+  padding-bottom: 0.5rem; }
+
+/* Required asterisk */
+span.required_identifier {
+  display: none; }
+
+
+
+
+/*Cumbria Mats custom CSS Classes*/
+.ccc-standoutblock{
+  background: #eeeeee;
+  padding: 5px;
+  border: solid 1px #bbbbbb;
+}
+
+
+.easy-date-picker-day{
+  height: calc(2.5rem + 2px) !important !important;
+}
+
+.easy-date-picker-year{
+  height: calc(2.5rem + 2px) !important !important;
+}
+
+.CCC-saveandreturn input {
+  background-color: white !important;
+  color: #0b0c0c !important;
+  font-size: 19px !important;
+  border-bottom: 1px solid #0b0c0c !important;
+}
+
+.CCC-saveandreturn a {
+  background-color: white !important;
+  color: #0b0c0c !important;
+  font-size: 19px !important;
+  border-bottom: 1px solid #0b0c0c !important;
+
+}
+
+.CCC-saveandreturn a:hover {
+
+  border-bottom: none !important;
+
+}
+
+.CCC-saveandreturn input:hover {
+
+  border-bottom: none !important;
+
+}
+
