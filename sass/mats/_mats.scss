@@ -232,6 +232,15 @@ span.custom-control-description {
   letter-spacing: -0.2px;
 }
 
+label.custom-control.custom-radio .custom-control-input:checked ~ .custom-control-indicator,
+label.custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #006818 !important;
+}
+
+label.custom-control.custom-radio .custom-control-input:checked ~ .custom-control-indicator::after {
+  background-color: #fff !important;
+}
+
 /* Header Styles */
 h2#sub_page_title {
   display: none;
