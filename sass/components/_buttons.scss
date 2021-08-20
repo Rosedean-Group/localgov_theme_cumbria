@@ -42,6 +42,7 @@ a.btn.btn-start {
   padding-right: 2.75rem;
 
   &:focus {
+    background-color: var(--color-focus);
     background-image: var(--icon-chevron-right-black);
     color: var(--color-black);
   }
