@@ -46,6 +46,12 @@
   color: var(--color-white);
 }
 
+/* Inline contact details */
+.inline-contact-details {
+  border-left: 0.3125rem solid var(--color-teal);
+  padding: 0 1.875rem;
+}
+
 /* Inset text */
 .inset-text {
   background-color: var(--color-teal-tint);
