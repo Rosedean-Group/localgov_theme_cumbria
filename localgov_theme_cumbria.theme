@@ -1,4 +1,18 @@
 <?php
+function localgov_theme_cumbria_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['cumbria_hide_highlights'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Hide highlighted text in all content.'),
+    '#default_value' => theme_get_setting('cumbria_hide_highlights'),
+    '#description'   => t("Check this box to hide all highlighted text on this site."),
+  );
+}
+
 /**
  * Implements hook_preprocess_HOOK().
  */
@@ -26,6 +40,10 @@ function localgov_theme_cumbria_preprocess_page(&$variables) {
       '#weight' => "0",
     ],
   ];
+
+  if (theme_get_setting('cumbria_hide_highlights')) {
+    $variables['cumbria_hide_highlights'] = TRUE;
+  }
 }
 
 function localgov_theme_cumbria_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
@@ -51,8 +69,8 @@ function localgov_theme_cumbria_theme_suggestions_input_alter(&$suggestions, arr
  * @param array $attachments
  */
 function localgov_theme_cumbria_page_attachments_alter(array &$attachments) {
+  // Remove default 'generator' metatag - we define it in the metatag module config
   foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
-    // Remove default 'generator' metatag - we define it in the metatag module config
     if ($attachment[1] == 'system_meta_generator') {
       unset($attachments['#attached']['html_head'][$key]);
     }

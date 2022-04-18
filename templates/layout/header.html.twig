@@ -3,6 +3,10 @@
   {{ attach_library('localgov_base/header-js') }}
 {% endif %}
 
+{% if cumbria_hide_highlights %}
+  {{ attach_library('localgov_theme_cumbria/hide-highlights') }}
+{% endif %}
+
 <header class="lgd-header">
 	<div class="lgd-container padding-horizontal">
 		<div class="lgd-row">

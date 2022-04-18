@@ -6,3 +6,8 @@ main:
     js/feedback.js: {}
   dependencies:
     - core/drupal
+
+hide-highlights:
+  css:
+    theme:
+      css/hide-highlights.css: {}
